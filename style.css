@@ -112,7 +112,14 @@ body{
     font-size: 50px;
 }
 .btn-color{
-    background: linear-gradient(#013224,#383541,#350606);
+    background: #F2811E;
+}
+.btn-color:hover{
+    background: #F2811E;
+}
+.btn-color a{
+    text-decoration: none;
+    color: #fff;
 }
 .icon{
     font-size: 35px;
@@ -228,7 +235,7 @@ body{
     justify-content: space-between;
 }
 .card{
-    height: 530px;
+    height: 420px;
     width: 340px;
     border-radius: 20px;
     border: 2px solid #08525ff7;
@@ -244,34 +251,31 @@ body{
 }
 .card p{
     color: #fff;
-    font-size: 16px;
+    font-size: 15px;
     text-align: justify;
 }
 .card3{
     padding-bottom: 10px;
 }
 .card3 h1{
-    padding-bottom: 8px;
+    padding-bottom: 4px;
     font-size: 20px;
-    text-align: left;
 }
 .card img{
     /* border: 1px solid bisque; */
     border-radius: 10px;
 }
 .card .front-end{
-    height: 200px;
+    height: 180px;
 }
 .card .back-end{
-    height: 200px;
+    height: 180px;
 }
 .card .blockchain{
-    height: 200px;
-    width: 200px;
+    height: 180px;
     align-content: center;
     align-items: center;
     text-align: center;
-    margin-left: 50px;
 }
 .card button{
     text-align: center;
@@ -299,10 +303,10 @@ body{
     padding: 30px;
 }
 .tolls h1{
-    font-size: 40px;
+    font-size: 35px;
 }
 .tolls span{
-    font-size: 20px;
+    font-size: 16px;
 }
 .tolls progress{
     height: 40px;
@@ -310,7 +314,7 @@ body{
 }
 .progress-bar {
     width: 0;
-    height: 25px;
+    height: 15px;
     background-color: #04f0f888;
     line-height: 20px;
     border-radius: 5px;

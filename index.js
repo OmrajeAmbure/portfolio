@@ -1,32 +1,32 @@
-$(document).ready(function() {
-    $('.progress-bar').each(function() {
+$(document).ready(function () {
+    $('.progress-bar').each(function () {
         var max = $(this).data('max');
         $(this).animate({
             width: (max / 6) * 100 + '%'
         }, {
             duration: 2000,
-            step: function(now) {
+            step: function (now) {
                 $(this);
             }
         });
     });
 });
 
-$(document).ready(function() {
-    $('.toggle-button').click(function() {
+$(document).ready(function () {
+    $('.toggle-button').click(function () {
         $('.nav_item').toggleClass('expanded');
     });
 });
 
-$(document).ready(function() {
-    $('#contactForm').on('submit', function(event) {
+$(document).ready(function () {
+    $('#contactForm').on('submit', function (event) {
         event.preventDefault();
         var name = $('#name').val();
         var email = $('#email').val();
         var message = $('#message').val();
 
         if (name && email && message) {
-            $('#contactForm').fadeOut(500, function() {
+            $('#contactForm').fadeOut(500, function () {
                 $(this).html('<div class="alert alert-success">Thank you for contacting us, ' + name + '!</div>').fadeIn(500);
             });
         } else {
@@ -36,7 +36,7 @@ $(document).ready(function() {
 });
 
 
-$(document).ready(function(){
+$(document).ready(function () {
     $(".navbar").hide().fadeOut({
         duration: 2000,
     }).fadeIn(2000)
@@ -48,32 +48,32 @@ $(document).ready(function(){
     }, 2000)
 });
 
-$(document).ready(function() {
+$(document).ready(function () {
     $('.footer a').hover(
-        function() {
+        function () {
             $(this).addClass('hovered');
         },
-        function() {
+        function () {
             $(this).removeClass('hovered');
         }
     );
 });
 
-$(document).ready(function() {
+$(document).ready(function () {
     $('.nav_item a').hover(
-        function() {
+        function () {
             $(this).addClass('hovereds');
         },
-        function() {
+        function () {
             $(this).removeClass('hovereds');
         }
     );
 });
 
-$(document).ready(function(){
+$(document).ready(function () {
     $(".skills_page").hide().slideDown(2000);
 });
 
-$(document).ready(function(){
+$(document).ready(function () {
     $(".tolls").hide().slideDown(2000);
 });
